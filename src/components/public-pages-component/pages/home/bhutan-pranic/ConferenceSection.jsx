@@ -75,7 +75,7 @@ const ConferenceSection = () => {
                   <LuArrowUpRight />
                 </span>
               </button>
-              <p className="text-[14px] text-[#000] text-center mt-1">
+              <p className="text-[11px] text-[#000] text-center mt-1">
                 View Event
               </p>
             </div>
