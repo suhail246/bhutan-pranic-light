@@ -69,7 +69,7 @@ const ConferenceSection = () => {
             </div>
 
             {/* ❌ NOT Rotating Content */}
-            <div className="absolute top-[52%] left-[53%] -translate-y-1/2 -translate-x-1/2 z-10">
+            <div className="absolute top-[52%] left-[51%] -translate-y-1/2 -translate-x-1/2 z-10">
               <button className="rounded-full bg-[#000] w-[40px] h-[40px] ml-2 flex items-center justify-center">
                 <span className="text-center text-[25px] text-white">
                   <LuArrowUpRight />
