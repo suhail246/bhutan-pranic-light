@@ -27,7 +27,7 @@ const EventSchedule = () => {
           data-aos-offset="100"
           className="primary-font-family absolute top-[130px] leading-[52px] tracking-[-0.88px] text-3xl md:text-4xl font-bold text-center mb-10"
         >
-          Our Events Schedule Plan
+          Upcoming Healing & Meditation Events{" "}
         </h2>
 
         {/* Cards */}

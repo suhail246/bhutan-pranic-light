@@ -5,7 +5,7 @@ const EventCalender = () => {
   const [activeDay, setActiveDay] = useState(2); // Default active is Day 02
 
   const days = [
-    { id: 1, day: "Day 01", date: "01", month: "JAN", year: "2025" },
+    { id: 1, day: "Day 01", date: "01", month: "January ", year: "2025" },
     { id: 2, day: "Day 02", date: "08", month: "JAN", year: "2025" },
   ];
 

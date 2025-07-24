@@ -5,17 +5,15 @@ const HeadingBtn = () => {
   return (
     <div className="absolute top-[200px] left-[20px]">
       <h2 className="primary-font-family text-[#000] text-lg mb-2 leading-[20px] uppercase">
-        Lorem ipsum dolor sit amet.
+        Bhutan Pranic Healing Centre presents
       </h2>
       <h1 className="primary-font-family text-[#000] text-5xl font-bold mb-4 leading-[55px] uppercase">
-        Lorem, ipsum.
-        <br /> Lorem, ipsum. <br />
-        Lorem, ipsum dolor.
+        Bhutan Pranic <br /> Healing Centre <br /> presents
       </h1>
       <p className="secondary-font-family text-[#000] mb-6 leading-[26px] uppercase">
-        Lorem ipsum dolor sit, perspiciatis
-        <br /> distinctio autem eos harum numquam dolore <br />
-        placeat illum labore.
+        Join us for a life-transforming experience in <br />
+        the heart of Bhutan. Learn ancient energy healing <br />
+        techniques to balance mind, body, and spirit.
       </p>
       <div className="flex items-center gap-5">
         <Button children={"Book Your Seat"} variant={"primary"} />

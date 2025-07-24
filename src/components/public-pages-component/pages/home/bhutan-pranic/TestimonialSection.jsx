@@ -5,31 +5,31 @@ import Image from "next/image";
 
 const testimonials = [
   {
-    name: "Gabriel Krajcik",
-    position: "Businessman",
+    name: "Liam Schmidt",
+    position: "Teacher",
     companyLogo:
       "https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg",
     avatar: "https://randomuser.me/api/portraits/men/32.jpg",
     review:
-      "Attending Innovate 2024 game-changer for my business. The insights I gained industry leaders during the keynote sessions & workshops were invaluable. I left the conference not only with a wealth of knowledge about emerging trends.",
+      "Attending the Pranic Healing course in Thimphu was a life-changing experience. The techniques helped me manage stress and feel more aligned spiritually.”",
   },
   {
-    name: "Emily Johnson",
-    position: "Marketing Manager",
+    name: "Sonam Choden",
+    position: "Teacher",
     companyLogo:
       "https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg",
     avatar: "https://randomuser.me/api/portraits/women/44.jpg",
     review:
-      "An unforgettable experience! The keynote speakers were truly inspiring, and the workshops gave me practical skills I could apply immediately.",
+      "Attending the Pranic Healing course in Thimphu was a life-changing experience. The techniques helped me manage stress and feel more aligned spiritually.”",
   },
   {
-    name: "Daniel Lee",
-    position: "Product Designer",
+    name: "Ahmed Musa",
+    position: "Teacher",
     companyLogo:
       "https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg",
     avatar: "https://randomuser.me/api/portraits/men/65.jpg",
     review:
-      "One of the most insightful conferences I’ve attended. I walked away with a fresh perspective on innovation and design thinking.",
+      "Attending the Pranic Healing course in Thimphu was a life-changing experience. The techniques helped me manage stress and feel more aligned spiritually.”",
   },
 ];
 

@@ -39,7 +39,7 @@ export default function MemoriesSection() {
           LAST YEAR MEMORY
         </span>
         <h2 className="primary-font-family text-3xl font-bold mt-3">
-          Recent Memories 2024
+          Moments of Healing & Togetherness{" "}
         </h2>
       </div>
 

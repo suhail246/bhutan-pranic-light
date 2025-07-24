@@ -12,7 +12,7 @@ const ConferenceSection = () => {
     <div className="w-full px-2">
       <div className="max-screen-width mx-auto bg-white py-8 grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
         {/* Left: Image Section */}
-        <div className="flex flex-col w-[100%] h-[550px] relative mt-[20px]">
+        <div className="flex flex-col w-[100%] h-[650px] relative mt-[20px]">
           <div className="rounded-[10px] relative group w-[100%] h-[50%] overflow-hidden">
             <Image
               src="/bhutan-pranic/IMG_3682.JPG"
@@ -69,7 +69,7 @@ const ConferenceSection = () => {
             </div>
 
             {/* ❌ NOT Rotating Content */}
-            <div className="absolute top-[51%] left-[53%] -translate-y-1/2 -translate-x-1/2 z-10">
+            <div className="absolute top-[52%] left-[53%] -translate-y-1/2 -translate-x-1/2 z-10">
               <button className="rounded-full bg-[#000] w-[40px] h-[40px] ml-2 flex items-center justify-center">
                 <span className="text-center text-[25px] text-white">
                   <LuArrowUpRight />
@@ -94,7 +94,7 @@ const ConferenceSection = () => {
             About us
           </span>
           <h2 className="primary-font-family text-3xl font-bold leading-snug mt-[5px]">
-            Lorem ipsum dolor sit amet.{" "}
+            Empowering Bhutanese Communities Through Energy Healing{" "}
           </h2>
           <p
             data-aos="fade-left"
@@ -103,10 +103,11 @@ const ConferenceSection = () => {
             data-aos-offset="100"
             className="primary-font-family text-gray-700"
           >
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis
-            minus debitis itaque accusantium pariatur, perferendis hic facilis
-            ad porro architecto! Magni illum assumenda suscipit pariatur
-            corporis quo repudiandae omnis ut.
+            Bhutan Pranic Healing Centre, established under the guidance of Her
+            Majesty the Queen Mother, offers certified Pranic Healing courses
+            and meditations. Backed by the World Pranic Healing Foundation and
+            supported by experienced instructors, we are committed to spreading
+            the science of energy healing across Bhutan.
           </p>
 
           {/* Keynotes */}

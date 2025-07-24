@@ -36,7 +36,7 @@ export default function EventCard({ src }) {
           </div>
           <div className="primary-font-family  flex items-center gap-2">
             <MapPin className="w-4 h-4" />
-            <span>Phobjikha Valley, Bhutan</span>
+            <span>Public Hall, Thimphu</span>
           </div>
         </div>
 
@@ -48,9 +48,9 @@ export default function EventCard({ src }) {
 
         {/* Description */}
         <p className="primary-font-family text-gray-600 text-[15px] leading-[26px] max-w-3xl">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere
-          cupiditate deleniti ad amet similique praesentium atque, expedita
-          ratione
+          Master Your Energy: Foundation of Pranic Healing” A guided session
+          into scanning, cleansing, and energizing the chakras for emotional and
+          physical well-being.
         </p>
 
         {/* Button */}
