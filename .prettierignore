@@ -1,0 +1,13 @@
+# Ignore node_modules
+node_modules/
+
+# Ignore build output directories
+build/
+dist/
+
+# Ignore UI components directory
+components/ui/**
+
+# Ignore specific file types (if needed)
+*.min.js
+*.min.css

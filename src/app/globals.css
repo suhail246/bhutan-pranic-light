@@ -1,0 +1,385 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+}
+
+html::-webkit-scrollbar-thumb {
+  background-color: #f3f3f9;
+  cursor: pointer;
+}
+html .dark::-webkit-scrollbar-thumb {
+  background-color: #292e32;
+  cursor: pointer;
+}
+
+.scrollbar-custom::-webkit-scrollbar {
+  width: 5px;
+  height: 8px;
+}
+.scrollbar-custom::-webkit-scrollbar-track {
+  background-color: transparent; /* Background of the scrollbar main container */
+}
+.scrollbar-custom::-webkit-scrollbar-thumb {
+  background-color: #d0d6db; /* Color of the scrollbar main elem */
+  border-radius: 4px;
+}
+.dark .scrollbar-custom::-webkit-scrollbar-thumb {
+  background-color: #292e32;
+  border-radius: 4px;
+}
+.scrollbar-custom::-webkit-scrollbar-hover {
+  width: 7px;
+  cursor: pointer;
+}
+
+.sidebar-custom::-webkit-scrollbar {
+  display: none;
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+.scrollbar-hide {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+/* BUG Theme Settings */
+
+.rotate-settings-button {
+  animation: rotate 2s linear infinite;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 380px;
+  background-color: white;
+  transform: translateX(100%);
+  transition: transform 0.3s ease-in-out;
+  z-index: 99;
+}
+
+.sidebar.open {
+  transform: translateX(0);
+}
+
+.sidebar.closed {
+  transform: translateX(100%);
+}
+
+.animated-span {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 3px;
+  background-color: #405189;
+  width: 0;
+  animation: expandWidth 2s ease-in-out infinite;
+  animation-delay: 1s;
+}
+
+@keyframes expandWidth {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+/* BUG Theme Settings */
+
+/* NOTE Preloader Spinner */
+.main-tranisiton {
+  transition-property: display, justify-conten, align-items, background-color,
+    z-index, inset, position;
+  transition-timing-function: ease-in-out;
+  transition-duration: 500 ms;
+}
+.page-transition-off {
+  display: none;
+}
+.page-transition-on {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  inset: 0;
+  position: fixed;
+}
+/* NOTE Preloader Spinner */
+
+.jodit-container:not(.jodit_inline) {
+  border: none !important;
+}
+
+.glass-effect {
+  background: rgba(255, 255, 255, 0.5);
+  box-shadow: 0 0px 8px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: "blur(5.5px)";
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+@layer utilities {
+  .transition-style {
+    @apply transition-all duration-500 ease-linear;
+  }
+  .transition-300 {
+    @apply transition-all duration-300 ease-in-out;
+  }
+  .custom-scrollbar {
+    @apply scrollbar-custom;
+  }
+  .custom-left-sidebar-scrollbar {
+    @apply sidebar-custom;
+  }
+  .text-soft {
+    @apply text-[#8A8D9C] font-poppins-rg;
+  }
+  .text-dark {
+    @apply text-[#545A61] font-poppins-md;
+  }
+  .no-focus {
+    @apply focus-visible:ring-0 focus-visible:ring-transparent focus-visible:ring-offset-0 !important;
+  }
+  .rte-styles {
+    @apply bg-red-500 !important;
+  }
+  .table-scroll {
+    @apply overflow-x-auto !important;
+  }
+  /* Bi Yaber (F-E) */
+  .h1-bold {
+    @apply text-[55px] leading-[67.14px] text-black-500;
+  }
+  .h2-bold {
+    @apply text-[40px] leading-[48.83px] text-black-500;
+  }
+  .h3-bold {
+    @apply text-[32px] leading-[39.06px] text-black-500;
+  }
+  .h4-bold {
+    @apply text-[28px] leading-[34.18px] text-black-500;
+  }
+  .h5-bold {
+    @apply text-[24px] leading-[29.30px] text-black-500;
+  }
+
+  .text-1 {
+    @apply text-[20px] leading-[24.41px] text-black-500;
+  }
+  .text-2 {
+    @apply text-[18px] leading-[24px] text-black-500;
+  }
+  .text-3 {
+    @apply text-[14px] leading-[24px] text-black-500;
+  }
+  .primary-font-family {
+    @apply font-space-grotesk;
+  }
+  .secondary-font-family {
+    @apply font-figtree;
+  }
+
+
+  /* News Items Details Text Area Content Style */
+  .news-article-item-details-style section {
+    @apply flex flex-col gap-[12px];
+  }
+  .news-article-item-details-style h1 {
+    @apply text-[24px]  font-bold text-[#212121];
+  }
+  .news-article-item-details-style h4 {
+    @apply text-[20px]  font-bold text-[#212121];
+  }
+  .news-article-item-details-style p {
+    @apply text-[18px]  text-black-300;
+  }
+  .news-article-item-details-style li {
+    @apply text-[18px]  text-black-300;
+  }
+  .news-article-item-details-style ul {
+    @apply list-disc ml-6;
+  }
+
+  /* Career Description Text Area Content Style */
+  .career-job-description ul {
+    @apply flex flex-col gap-[8px] list-disc ml-6;
+  }
+  .career-job-description li {
+    @apply text-[18px] text-black-300 leading-[100%];
+  }
+
+  /* Course Details Page */
+  .course-details-description {
+    @apply flex flex-col gap-[16px] md:gap-[40px] mt-[12px];
+  }
+  .course-details-description p,
+  .course-details-description h5 {
+    @apply text-[16px] md:text-[24px] text-black-500;
+  }
+  .course-details-description div {
+    @apply flex flex-col gap-[14px] lg:pl-[28px];
+  }
+
+  .course-details-category-or-conditions-section-description ol {
+    @apply flex flex-col gap-2 list-decimal pl-6;
+  }
+  .course-details-category-or-conditions-section-description li,
+  .course-details-category-or-conditions-section-description p {
+    @apply text-[16px] md:text-[20px] text-black-500;
+  }
+
+  #course-details-training-details-description-container ol {
+    @apply flex flex-col gap-[18px] list-decimal pl-[14px];
+  }
+  #course-details-training-details-description-container ul {
+    @apply list-disc pl-1;
+  }
+  #course-details-training-details-description-container li {
+    @apply text-[16px] md:text-[18px] text-black-500;
+  }
+  #course-details-training-details-description-container p {
+    @apply text-[16px] md:text-[18px] text-black-500;
+  }
+  #course-details-training-details-description-container h5 {
+    @apply text-[24px] text-black-500;
+  }
+
+  .course-details-faqs-answer p {
+    @apply text-[14px] md:text-[16px] text-black-300;
+  }
+
+  .about-us-section-2-description p {
+    @apply w-full text-[18px] md:text-[24px] leading-[21.97px] md:leading-[30px] text-black-500;
+  }
+
+  .about-us-section-3-description p {
+    @apply text-[18px] md:text-[24px] text-black-500  md:leading-[32px];
+  }
+
+  .offers-section-2-description p {
+    @apply text-[18px] md:text-[24px] text-black-500 leading-[100%] md:leading-[30px];
+  }
+
+  .privacy-policy-description p {
+    @apply text-black-300;
+  }
+  .privacy-policy-description h5,
+  .privacy-policy-description h6 {
+    @apply text-black-500;
+  }
+  .privacy-policy-description a {
+    @apply hover:text-orange-500 hover:border-b hover:border-orange-500 transition-300;
+  }
+  
+  /* Bhutan pranic */
+  .max-screen-width {
+    @apply max-w-[1300px]
+  }
+}
+@keyframes rotateInfinite {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+[data-aos="infinite-rotate"] {
+  animation: rotateInfinite 0.5s linear infinite;
+}
+
+@layer base {
+  :root {
+    --radius: 0.5rem;
+  }
+}
+
+
+
+/* common btn classes */
+/* .btn-group {
+  display: flex;
+  gap: 15px;
+}
+
+.btn {
+  position: relative;
+  overflow: hidden;
+  padding: 20px 30px;
+  font-weight: bold;
+  text-transform: uppercase;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: color 0.8s ease;
+  z-index: 1;
+}
+
+.btn::before {
+  content: "";
+  position: absolute;
+  background: black;
+  border-radius: 50%;
+  width: 300%;
+  height: 300%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  transition: transform 0.5s ease;
+  z-index: -1;
+}
+
+.btn:hover::before {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.btn-yellow {
+  background: #f9b201;
+  color: black;
+  border: none;
+}
+
+.btn-yellow:hover {
+  color: white;
+}
+
+.btn-outline {
+  background: transparent;
+  color: white;
+  border: 2px solid white;
+}
+
+.btn-outline:hover {
+  color: white;
+} */
