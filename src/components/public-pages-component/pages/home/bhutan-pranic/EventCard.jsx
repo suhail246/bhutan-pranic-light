@@ -54,7 +54,7 @@ export default function EventCard({ src }) {
         </p>
 
         {/* Button */}
-        <Button children={"Purschase ticket now"} />
+        <Button children={"View Event"} />
       </div>
     </div>
   );

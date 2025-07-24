@@ -12,12 +12,12 @@ const RightSecMenu = () => {
   return (
     <div className="flex items-center gap-5 mr-[100px]">
       {/* Search icon */}
-      <button
+      {/* <button
         aria-label="Search"
         className="hover:text-green-400 transition-colors"
       >
         <FaSearch className="w-5 h-5" />
-      </button>
+      </button> */}
 
       {/* Divider */}
       <div className="border-l border-white opacity-50 h-5"></div>

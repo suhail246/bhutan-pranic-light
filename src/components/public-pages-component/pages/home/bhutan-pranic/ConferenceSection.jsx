@@ -69,14 +69,14 @@ const ConferenceSection = () => {
             </div>
 
             {/* ❌ NOT Rotating Content */}
-            <div className="absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 z-10">
+            <div className="absolute top-[51%] left-[53%] -translate-y-1/2 -translate-x-1/2 z-10">
               <button className="rounded-full bg-[#000] w-[40px] h-[40px] ml-2 flex items-center justify-center">
                 <span className="text-center text-[25px] text-white">
                   <LuArrowUpRight />
                 </span>
               </button>
-              <p className="text-[15px] text-[#000] text-center mt-1">
-                Buy ticket
+              <p className="text-[14px] text-[#000] text-center mt-1">
+                View Event
               </p>
             </div>
           </div>
@@ -164,7 +164,7 @@ const ConferenceSection = () => {
             data-aos-offset="100"
             className="mt-[20px] mb-3"
           >
-            <Button children={"BECOME AN ATTENDEE"} />
+            <Button children={"View More"} />
           </div>
         </div>
       </div>
