@@ -19,7 +19,7 @@ const BhuHeroSection = () => {
       <div
         className="absolute inset-0"
         style={{
-          backgroundImage: 'url("/bhutan-pranic/bg/_DSC1544.jpg")',
+          backgroundImage: "url('/bhutan-pranic/bg/_DSC1544.jpg')",
           opacity: "0.2",
         }}
       ></div>
